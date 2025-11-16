@@ -1,0 +1,62 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  
+  <!-- RTL Support -->
+  <style>
+    html, body {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    .site-header, .site-nav, .site-title, .page-link {
+      direction: rtl !important;
+    }
+    .site-nav {
+      float: left !important;
+    }
+    .site-title {
+      float: right !important;
+    }
+    .page-link {
+      margin-right: 0 !important;
+      margin-left: 20px !important;
+    }
+    .wrapper, .page-content, .post-content, .home {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    .post-title, .post-meta, .post-link, .post-header {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    .footer-col-wrapper {
+      direction: rtl !important;
+    }
+    .footer-col {
+      float: right !important;
+    }
+    ul, ol {
+      margin-right: 30px !important;
+      margin-left: 0 !important;
+    }
+    blockquote {
+      border-left: none !important;
+      border-right: 4px solid #e8e8e8 !important;
+      padding-left: 0 !important;
+      padding-right: 15px !important;
+      margin-left: 0 !important;
+    }
+    pre, code, .highlight {
+      direction: ltr !important;
+      text-align: left !important;
+      unicode-bidi: embed !important;
+    }
+  </style>
+</head>
