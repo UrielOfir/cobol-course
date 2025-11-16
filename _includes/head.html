@@ -9,54 +9,137 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
   
-  <!-- RTL Support -->
-  <style>
+  <!-- RTL Support - Force RTL for Hebrew -->
+  <style type="text/css">
+    /* Force RTL globally */
+    * {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
     html, body {
       direction: rtl !important;
       text-align: right !important;
     }
-    .site-header, .site-nav, .site-title, .page-link {
+    
+    /* Header and Navigation */
+    .site-header {
       direction: rtl !important;
+      text-align: right !important;
     }
-    .site-nav {
-      float: left !important;
-    }
+    
     .site-title {
       float: right !important;
-    }
-    .page-link {
       margin-right: 0 !important;
+    }
+    
+    .site-nav {
+      float: left !important;
+      direction: rtl !important;
+    }
+    
+    .site-nav .page-link {
       margin-left: 20px !important;
+      margin-right: 0 !important;
     }
-    .wrapper, .page-content, .post-content, .home {
+    
+    .site-nav .trigger {
+      text-align: right !important;
+    }
+    
+    /* Main content */
+    .wrapper, .page-content, .post-content, .home, main {
       direction: rtl !important;
       text-align: right !important;
     }
-    .post-title, .post-meta, .post-link, .post-header {
+    
+    /* Post elements */
+    .post-title, .post-meta, .post-link, .post-header, .post-list {
       direction: rtl !important;
       text-align: right !important;
     }
+    
+    .post-list > li {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
+    /* Paragraphs and text */
+    p, div, span, a {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
+    /* Footer */
+    .site-footer {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
     .footer-col-wrapper {
       direction: rtl !important;
     }
+    
     .footer-col {
       float: right !important;
     }
+    
+    .footer-col-1, .footer-col-2, .footer-col-3 {
+      float: right !important;
+      text-align: right !important;
+    }
+    
+    /* Lists */
     ul, ol {
       margin-right: 30px !important;
       margin-left: 0 !important;
+      padding-right: 30px !important;
+      padding-left: 0 !important;
+      direction: rtl !important;
+      text-align: right !important;
     }
+    
+    li {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
+    /* Blockquotes */
     blockquote {
       border-left: none !important;
       border-right: 4px solid #e8e8e8 !important;
       padding-left: 0 !important;
       padding-right: 15px !important;
       margin-left: 0 !important;
+      margin-right: 0 !important;
+      direction: rtl !important;
+      text-align: right !important;
     }
-    pre, code, .highlight {
+    
+    /* Code blocks - Keep LTR */
+    pre, code, .highlight, .language-ruby, .language-javascript, 
+    .language-python, .language-cobol {
       direction: ltr !important;
       text-align: left !important;
       unicode-bidi: embed !important;
+    }
+    
+    /* Social links */
+    .social-media-list {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+    
+    /* RSS subscribe */
+    .rss-subscribe {
+      direction: rtl !important;
+      text-align: right !important;
     }
   </style>
 </head>
