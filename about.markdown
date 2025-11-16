@@ -1,16 +1,20 @@
 ---
 layout: page
-title: About
+title: אודות
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+זהו אתר קורס COBOL הבנוי על גבי Jekyll. כאן תוכלו ללמוד על שפת התכנות COBOL, לקרוא מדריכים ולראות דוגמאות קוד.
 
-You can find the source code for Minima at GitHub:
+## אודות Jekyll
+
+Jekyll הוא מחולל אתרים סטטיים פשוט, מודע לבלוג. למידע נוסף על התאמה אישית של ערכת Jekyll שלך, כמו גם על תיעוד בסיסי לשימוש ב-Jekyll, בקרו ב-[jekyllrb.com](https://jekyllrb.com/)
+
+את קוד המקור של Minima תוכלו למצוא ב-GitHub:
 [jekyll][jekyll-organization] /
 [minima](https://github.com/jekyll/minima)
 
-You can find the source code for Jekyll at GitHub:
+את קוד המקור של Jekyll תוכלו למצוא ב-GitHub:
 [jekyll][jekyll-organization] /
 [jekyll](https://github.com/jekyll/jekyll)
 

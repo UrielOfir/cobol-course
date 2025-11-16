@@ -1,0 +1,122 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* RTL Support for Hebrew */
+html {
+  direction: rtl;
+}
+
+body {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Header navigation */
+.site-header {
+  direction: rtl;
+}
+
+.site-nav {
+  float: left;
+}
+
+.page-link {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Footer */
+.footer-col-wrapper {
+  direction: rtl;
+}
+
+.footer-col {
+  float: right;
+}
+
+/* Posts list */
+.post-list > li {
+  margin-left: 0;
+}
+
+.post-meta {
+  direction: rtl;
+}
+
+.post-link {
+  direction: rtl;
+}
+
+/* Post content */
+.post-content {
+  direction: rtl;
+  text-align: right;
+}
+
+.post-title {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Code blocks - keep LTR for code */
+pre, code, .highlight {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: embed;
+}
+
+/* Lists */
+ul, ol {
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: none;
+  border-right: 4px solid #e8e8e8;
+  padding-left: 0;
+  padding-right: 15px;
+  margin-left: 0;
+}
+
+/* Site title */
+.site-title {
+  float: right;
+}
+
+/* Wrapper adjustments */
+.wrapper {
+  direction: rtl;
+}
+
+/* Page content */
+.page-content {
+  direction: rtl;
+}
+
+/* Home page layout */
+.home {
+  direction: rtl;
+}
+
+/* Post header */
+.post-header {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Pagination */
+.pagination {
+  direction: rtl;
+}
+
+.pagination .previous {
+  float: right;
+}
+
+.pagination .next {
+  float: left;
+}
