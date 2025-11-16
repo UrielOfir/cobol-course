@@ -18,22 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: קורס COBOL
-email: your-email@example.com
+title: קורס קובול בעברית
+email: urielofir@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  קורס מקיף ללימוד שפת התכנות COBOL. כאן תמצאו מדריכים, דוגמאות קוד והסברים
-  מפורטים לשפת COBOL. האתר מיועד למתחילים ולמתקדמים כאחד.
+  קורס קובול בעברית. כל מה שצריך לדעת כדי להתחיל לתכנת בקובול.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 lang: he
 direction: rtl
+twitter_username: 
+github_username: UrielOfir
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# GitHub Pages settings  
+github_username: UrielOfir
+repository: UrielOfir/cobol-course
+
+# Production settings
+url: "https://UrielOfir.github.io"
+baseurl: "/cobol-course"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -49,6 +58,11 @@ plugins:
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
